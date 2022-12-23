@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>
+            <img src="https://www.adidas.com/glass/react/0231fb0/assets/img/icon-adidas-logo.svg" alt="">
+            <h2> Adidas | Indonesia</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <button class="cart" type="button" id="open-modal"><img src="./assets/cart.png" alt=""></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="carousel">
+        <div class="carousel-item fade">
+            <img class="img-carousel" src="https://static-ph.zacdn.com/cms/flagshipstore/brands/adidas_men_april_Carousel_Banner_996x350_1.jpg" alt="">
+            <div class="caption">
+                <h2 class="p-caption">THE 2023 COLLECTION</h2>
+                <p class="p-desc">A modern exploration of form, function, and color—discover Chapter 01 now.</p>
+                    <!-- <button type="button" class="btn-carousel">
+                        <div>
+                            Shop Now
+                        </div>
+                        <img class="arrow" src="/assets/right-arrow.png" alt="">
+                    </button> -->
+            </div>
+        </div>
+        <div class="carousel-item fade">
+            <img class="img-carousel" src="https://static-ph.zacdn.com/cms/flagshipstore/brands/adidas_men_april_Carousel_Banner_996x350_2.jpg" alt="">
+            <div class="caption">
+                <h2 class="p-caption">THE 2023 COLLECTION</h2>
+                <p class="p-desc">A modern exploration of form, function, and color—discover Chapter 01 now.</p>
+                <!-- <button type="button" class="btn-carousel">
+                    <div>
+                        Shop Now
+                    </div>
+                    <img class="arrow" src="/assets/right-arrow.png" alt="">
+                </button> -->
+            </div>
+        </div>
+        <div class="carousel-item fade">
+            <img class="img-carousel" src="https://static-ph.zacdn.com/cms/flagshipstore/brands/adidas_men_april_Carousel_Banner_996x350_3.jpg" alt="">
+            <div class="caption">
+                <h2 class="p-caption" >THE 2023 COLLECTION</h2>
+                <p class="p-desc" >A modern exploration of form, function, and color—discover Chapter 01 now.</p>
+                <!-- <button type="button" class="btn-carousel">
+                    <div>
+                        Shop Now
+                    </div>
+                    <img class="arrow" src="/assets/right-arrow.png" alt="">
+                </button> -->
+            </div>
+        </div>
+        <a class="prev" onClick="nextSlides(1)">&#10094;</a>
+        <a class="next" onClick="nextSlides(1)">&#10095;</a> 
+
+        <div class="nav-section">
+            <span class="nav" onClick="currentSlide(1)"></span> 
+            <span class="nav" onClick="currentSlide(2)"></span> 
+            <span class="nav" onClick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+    <div class="wrapper-grid">
+        <div class="row">
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(0)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(1)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(2)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(3)">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(4)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(5)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(6)">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-product" src="" alt="">
+                <div class="p-caption">
+                    <div class="price">
+                        <h4 class="p-name">Product Name</h4>
+                        <p class="p-price">Price</p>
+                    </div>
+                    <div class="btn-content">
+                        <button type="button" class="order" onclick="addData(7)">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+    <!-- Modal content -->
+    <div class="modal-content" id="modal-content">
+        <span class="close">&times;</span>
+            <!-- <img class="img-product" src="" alt="">
+            <div class="p-caption">
+                <div class="price">
+                    <h4 class="p-name">Product Name</h4>
+                    <p class="p-price">Price</p>
+                </div>
+            </div> -->
+    </div>
+    
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
